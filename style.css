@@ -49,3 +49,97 @@ form{
     display: none;
 }
 
+.leftD{
+    /* postion: absolute; */
+    left: 50px;
+    top: 500px;
+    /* display:none; */
+}
+
+.leftR-IMG{
+    width: 200px;
+    display: none;
+}
+
+.leftM-IMG{
+    width: 200px;
+    display: none;
+}
+
+.leftL-IMG{
+    width: 200px;
+    display: none;
+}
+
+.rightD-IMG{
+    width: 200px;
+    display: none;
+}
+
+.rightR-IMG{
+    width: 200px;
+    display: none;
+}
+
+.rightM-IMG{
+    width: 200px;
+    display: none;
+}
+
+.rightL-IMG{
+    width: 200px;
+    display: none;
+}
+
+.leftD-IMG{
+    width: 200px;
+    display: none;
+}
+
+.selectCharacterLeft{
+    width: 40px;
+    background-color: lightcyan;
+    vertical-align: top;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 0px auto 5px auto;
+}
+.selectCharacterRight{
+    width: 40px;
+    background-color: lightcyan;
+    vertical-align: top;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 0px auto 5px auto;
+
+}
+
+
+ul{
+    width: 100px;
+    list-style-type: none;
+    text-align: center;
+    background-color: white;
+    display: none;
+    margin: 0px auto;
+}
+
+.group{
+    display: inline-block;
+    width:45%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.box1{
+    margin-left: -125px;
+    margin-right: 380px;
+    display: inline-block;
+}
+
+.box2{
+    margin-right: -125px;
+    display: inline-block;
+    vertical-align: top;
+
+}
