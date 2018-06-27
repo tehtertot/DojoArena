@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .container {
+            width: 1000px;
+            height: 600px;
+            padding: 20px;
+            background-color: black;
+            border: 10px solid lightgray;
+            
+
+        }
+
+        .lineOne , .lineTwo{
+            width: 70px;
+            min-height: 40px;
+            display: inline-block;
+            vertical-align: top;
+            background-color: lightgray;
+            border-radius: 10px;
+            
+        }
+
+        .rows {
+            margin: 0px 0px 10px 50px;
+        }
+
+      #arenaContainer {
+          border: 2px solid gray;
+          border-radius: 10px;
+          width: 320px;
+          min-height: 160px;
+          background-color:  #ffffff;
+          margin: 15% 0 0 25%;
+          opacity: 0.6;
+          position: fixed;
+
+      }
+
+      #arenaContainer h1 {
+          color: darkorange;
+          font-weight: bold;
+          text-align: center;
+      }
+
+      #displayArea {
+        width: 1000px;
+        min-height: 600px;
+        padding: 20px;
+        background-color: black;
+        border: 10px solid lightgray;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style>
+</head>
+<body>
+    <div id="displayArea">
+        <div id="arenaContainer">
+            <h1>Select Arena</h1>
+            <div class="rows">
+                <input id="beach" class="lineOne" type="button" value="beach">
+                <input id="planet" class="lineOne" type="button" value="planet">
+                <input id="dojo" class="lineOne" type="button" value="dojo">
+            </div>
+            <div class="rows">
+                <input id="forest" class="lineTwo" type="button" value="forest">
+                <input id="matrix" class="lineTwo" type="button" value="matrix">
+                <input id="snow" class="lineTwo" type="button" value="snow">
+         </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+            var areans = {
+              beach : "beach.jpg" ,
+              dojo : "dojo.jpg",
+              earth : "earth.jpg",
+              forest : "forest.jpg",
+              matrix: "matrix.jpg",
+              snow : "snow.jpg"
+            };
+            
+        function hoverHandlerOnEnter(url){
+                    $('#displayArea').css("background-image", "url('" + url + "')" );
+                 }
+        
+        $("#dojo").hover(
+            function () {
+                    $('#displayArea').css("background-image", "url('dojo.jpg')" );
+                 } ,
+                 function (){
+                    $('#displayArea').css("background-image", "" );   
+                 }
+                );
+
+         $("#planet").hover(
+            function () {
+                    $('#displayArea').css("background-image", "url('earth.jpg')" );
+                 },
+                 function (){
+                    $('#displayArea').css("background-image", "" );   
+                 }
+                );
+        $("#beach").hover(
+            function () {
+                    $('#displayArea').css("background-image", "url('beach.jpg')" );
+                 },
+                 function (){
+                    $('#displayArea').css("background-image", "" );   
+                 }
+                );
+        
+         $("#forest").hover(
+            function () {
+                    $('#displayArea').css("background-image", "url('forest.jpg')" );
+                 },
+                 function (){
+                    $('#displayArea').css("background-image", "" );   
+                 }
+         );
+        
+         $("#matrix").hover(
+            function () {
+                    $('#displayArea').css("background-image", "url('matrix.jpg')" );
+                 },
+                 function (){
+                    $('#displayArea').css("background-image", "" );   
+                 }
+         );
+
+          $("#snow").hover(
+            function () {
+                    $('#displayArea').css("background-image", "url('snow.jpg')" );
+                 },
+                null
+         );
+
+    /* 
+    * JQuery how to handle click events
+    */         
+    
+    $("#snow").click(
+            function () {
+               
+                $('#displayArea').css("background-image", "url('snow.jpg')" ).off("mouseover");
+            }
+        );
+            
+        </script>
+</body>
+</html>
