@@ -201,7 +201,13 @@
                 var end = this.value;
                 var firstDropVal = $('#player1').val();
                 console.log(firstDropVal)
-                $(".container").css('img', "url('img/snow.jpg')");
+                $("#turtlebox1").append("<img src= 'img/"+firstDropVal+".png'/>");
+            });
+            $("#player2").change(function () {
+                var end = this.value;
+                var SecondDropVal = $('#player2').val();
+                console.log(SecondDropVal)
+                $("#turtlebox2").append("<img src= 'img/"+SecondDropVal+".png'/>");
             });
         
         </script>    
