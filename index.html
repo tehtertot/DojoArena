@@ -2,9 +2,212 @@
 <html>
 <head>
 	<title>Wireframe 1</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-	
+	<div id="container">
+		<div class="imageChange">
+		<div class="selectBox" id="selectArena">
+			<h1 class="select">Select Arena</h1>
+			<div class="buttonGroup">
+				<p id="beach">Beach</p>
+				<p id="planet">planet</p>
+				<p id="dojo">dojo</p>
+				<p id="forest">forest</p>
+				<p id="matrix">matrix</p>
+				<p id="snow">snow</p>
+			</div>
+		</div>
 
+		<div class="selectBoxPL" id="selectPlayers">
+			<h1 class="select">Select Players</h1>
+			<!-- Select Ninja Button -->
+			<div class="dropdown">
+			  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    Select Ninja
+			  </button>
+			  <div class="dropdown-menu" id="selectFirstNinja" aria-labelledby="dropdownMenu2">
+			    <button class="dropdown-item" id="mike1" type="button">Mikey</button>
+			    <button class="dropdown-item" id="leo1" type="button">Leo</button>
+			    <button class="dropdown-item" id="raphael1" type="button">Raphael</button>
+			    <button class="dropdown-item" id="donny1" type="button">Donatello</button>
+			  </div>
+			</div>
+
+			<div class="dropdown">
+			  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    Select Ninja
+			  </button>
+			  <div class="dropdown-menu" id="selectSecondNinja" aria-labelledby="dropdownMenu2">
+			    <button class="dropdown-item" id="mike2" type="button">Mikey</button>
+			    <button class="dropdown-item" id="leo2" type="button">Leo</button>
+			    <button class="dropdown-item" id="raphael2" type="button">Raphael</button>
+			    <button class="dropdown-item" id="donny2" type="button">Donatello</button>
+			  </div>
+			</div>
+
+		</div>
+
+
+
+		</div>
+
+		<div class="playerPicks" id="playerOnePick">
+			<img>
+		</div>
+
+		<div class="playerPicks" id="playerTwoPick">
+			<img>
+		</div>
+	</div>
+
+<script>
+
+	//Hover Effect
+
+	//Beach
+	$('#beach').hover(function() {
+		$('.imageChange').css('background-image', 'url("beach.jpg")');
+	}, function() {
+		$('.imageChange').find('.imageChange').remove();
+	});
+	
+	//Planet
+	$('#planet').hover(function() {
+		$('.imageChange').css('background-image', 'url("earth.jpg")');
+	}, function() {
+		$('.imageChange').find('.imageChange').remove();
+	});
+
+	//Dojo
+	$('#dojo').hover(function() {
+		$('.imageChange').css('background-image', 'url("dojo.jpg")');
+	}, function() {
+		$('.imageChange').find('.imageChange').remove();
+	});
+
+	//Forest
+	$('#forest').hover(function() {
+		$('.imageChange').css('background-image', 'url("forest.jpg")');
+	}, function() {
+		$('.imageChange').find('.imageChange').remove();
+	});
+
+	//Matrix
+	$('#matrix').hover(function() {
+		$('.imageChange').css('background-image', 'url("matrix.jpg")');
+	}, function() {
+		$('.imageChange').find('.imageChange').remove();
+	});
+
+	//Snow
+	$('#snow').hover(function() {
+		$('.imageChange').css('background-image', 'url("snow.jpg")');
+	}, function() {
+		$('.imageChange').find('.imageChange').remove();
+	});
+
+
+	//End Hover Effect
+
+
+	//Click Effect
+
+	$('#beach').click(function() {
+		$('.imageChange').css('background-image', 'url("beach.jpg")');
+		$('#selectArena').hide();
+		$('#selectPlayers').show();
+	});
+
+	$('#planet').click(function() {
+		$('.imageChange').css('background-image', 'url("earth.jpg")');
+		$('#selectArena').hide();
+		$('#selectPlayers').show();
+	});
+
+	$('#dojo').click(function() {
+		$('.imageChange').css('background-image', 'url("dojo.jpg")');
+		$('#selectArena').hide();
+		$('#selectPlayers').show();
+	});
+
+	$('#forest').click(function() {
+		$('.imageChange').css('background-image', 'url("forest.jpg")');
+		$('#selectArena').hide();
+		$('#selectPlayers').show();
+	});
+
+	$('#matrix').click(function() {
+		$('.imageChange').css('background-image', 'url("matrix.jpg")');
+		$('#selectArena').hide();
+		$('#selectPlayers').show();
+	});
+
+	$('#snow').click(function() {
+		$('.imageChange').css('background-image', 'url("snow.jpg")');
+		$('#selectArena').hide();
+		$('#selectPlayers').show();
+	});
+
+	$('#dropdownMenu2').click(function () {
+		$('#selectFirstNinja').toggle();
+	});
+
+	$('#dropdownMenu3').click(function () {
+		$('#selectSecondNinja').toggle();
+	});
+
+
+
+
+
+	// Player 1
+
+	$('#mike1').click(function () {
+		console.log('Help!');
+		$('#playerOnePick img').attr({src: "mikey.png"});
+		$('#playerOnePick img').addClass('ninjaP1Pos');
+	});
+
+	$('#leo1').click(function () {
+		$('#playerOnePick img').attr({src: "leo.png"});
+		$('#playerOnePick img').addClass('ninjaP1Pos');
+	});
+
+	$('#raphael1').click(function () {
+		$('#playerOnePick img').attr({src: "raphael.png"});
+		$('#playerOnePick img').addClass('ninjaP1Pos');
+	});
+
+	$('#donny1').click(function () {
+		$('#playerOnePick img').attr({src: "donny.png"});
+		$('#playerOnePick img').addClass('ninjaP1Pos');
+	});
+
+	//Player 2
+	$('#mike2').click(function () {
+		console.log('Help!');
+		$('#playerTwoPick img').attr({src: "mikey.png"});
+		$('#playerTwoPick img').addClass('ninja2Pos');
+	});
+
+	$('#leo2').click(function () {
+		$('#playerTwoPick img').attr({src: "leo.png"});
+		$('#playerTwoPick img').addClass('ninja2Pos');
+	});
+
+	$('#raphael2').click(function () {
+		$('#playerTwoPick img').attr({src: "raphael.png"});
+		$('#playerTwoPick img').addClass('ninja2Pos');
+	});
+
+	$('#donny2').click(function () {
+		$('#playerTwoPick img').attr({src: "donny.png"});
+		$('#playerTwoPick img').addClass('ninja2Pos');
+	});
+
+</script>
 </body>
 </html>
