@@ -1,8 +1,16 @@
+                               ÛÛÛÛÛ                            ÛÛÛÛÛ                                             ÛÛÛÛÛ     
+                              °°ÛÛÛ                            °°ÛÛÛ                                             °°ÛÛÛ      
+ ÛÛÛÛÛÛÛÛ   ÛÛÛÛÛÛ  ÛÛÛÛÛ ÛÛÛÛ °ÛÛÛÛÛÛÛ   ÛÛÛÛÛÛ  ÛÛÛÛÛÛÛÛ      °ÛÛÛÛÛÛÛ  ÛÛÛÛÛÛÛÛ   ÛÛÛÛÛÛ   ÛÛÛÛÛÛÛÛ    ÛÛÛÛÛÛ  °ÛÛÛÛÛÛÛ  
+°°ÛÛÛ°°ÛÛÛ ÛÛÛ°°ÛÛÛ°°ÛÛÛ °ÛÛÛ  °ÛÛÛ°°ÛÛÛ ÛÛÛ°°ÛÛÛ°°ÛÛÛ°°ÛÛÛ     °ÛÛÛ°°ÛÛÛ°°ÛÛÛ°°ÛÛÛ °°°°°ÛÛÛ °°ÛÛÛ°°ÛÛÛ  ÛÛÛ°°ÛÛÛ °ÛÛÛ°°ÛÛÛ 
+ °ÛÛÛ °°° °ÛÛÛÛÛÛÛ  °ÛÛÛ °ÛÛÛ  °ÛÛÛ °ÛÛÛ°ÛÛÛÛÛÛÛ  °ÛÛÛ °ÛÛÛ     °ÛÛÛ °ÛÛÛ °ÛÛÛ °°°   ÛÛÛÛÛÛÛ  °ÛÛÛ °ÛÛÛ °ÛÛÛ °°°  °ÛÛÛ °ÛÛÛ 
+ °ÛÛÛ     °ÛÛÛ°°°   °ÛÛÛ °ÛÛÛ  °ÛÛÛ °ÛÛÛ°ÛÛÛ°°°   °ÛÛÛ °ÛÛÛ     °ÛÛÛ °ÛÛÛ °ÛÛÛ      ÛÛÛ°°ÛÛÛ  °ÛÛÛ °ÛÛÛ °ÛÛÛ  ÛÛÛ °ÛÛÛ °ÛÛÛ 
+ ÛÛÛÛÛ    °°ÛÛÛÛÛÛ  °°ÛÛÛÛÛÛÛÛ ÛÛÛÛÛÛÛÛ °°ÛÛÛÛÛÛ  ÛÛÛÛ ÛÛÛÛÛ    ÛÛÛÛÛÛÛÛ  ÛÛÛÛÛ    °°ÛÛÛÛÛÛÛÛ ÛÛÛÛ ÛÛÛÛÛ°°ÛÛÛÛÛÛ  ÛÛÛÛ ÛÛÛÛÛ
+°°°°°      °°°°°°    °°°°°°°° °°°°°°°°   °°°°°°  °°°° °°°°°    °°°°°°°°  °°°°°      °°°°°°°° °°°° °°°°°  °°°°°°  °°°° °°°°° 
+
 # Dojo Arena
 #### Clone this repo to your Desktop
 
 ##### In this group activity, you and your partner will be creating the opening sequences of a Street Fighter-like game. The wireframes and images are provided in this repo. It is not required to use the same images. Have fun!
-
 
 
 ##### Assignment Instructions:
@@ -12,3 +20,4 @@
 2. When the user selects an arena, the arena image will fix to the game window and a new module will appear that allows the user(s) to select their game players. __*Refer to Wireframe 2*__
 
 3. As the user(s) select their game players, the player images will fix to the screen. __*Refer to Wireframe 3*__
+
