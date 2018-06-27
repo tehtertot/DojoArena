@@ -10,15 +10,26 @@
 .container{
     width: 970px;
     height: 500px;
-    padding:100px 0px 0px 350px;
-    background-color: black;
+    /* padding:100px 0px 0px 350px; */
+    /* background-color: black; */
     border: 3px solid grey;
 
 }
 
 .content{
-    background-color: black;
+    width: 970px;
+    height: 500px;
+    /* background-color: black; */
     display: inline-block;
+}
+
+#backgroundbeach, #backgroundplanet, #backgrounddojo, #backgroundforest, #backgroundmatrix, #backgroundsnow{
+    /* display:none; */
+    /* background-size: 970px 500px; */
+    width: 970px;
+    height: 500px;
+    display: none;
+
 }
 
 .home{
@@ -54,6 +65,7 @@ h2{
     border-radius: 10px;
     width:400px;
     height:200px;
+    display: none;
     
 }
 
