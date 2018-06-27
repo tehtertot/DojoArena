@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dojo Arena</title>
+	<link rel="stylesheet" type="text/css" href="DojoArena.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+
+
+<body>
+<div class="background">
+	<div class="select">
+		<h1>Select Arena</h1>
+		<button class="beach">beach</button>
+		<button class="earth">planet</button>
+		<button class="dojo">dojo</button>
+		<button class="forest">forest</button>
+		<button class="matrix">matrix</button>
+		<button class="snow">snow</button>
+	</div>
+</div>
+	
+
+
+<script type="text/javascript">
+
+ $("button.beach").hover(
+ 	function(){
+     $(".background").css("background-image", "url(beach.jpg)")
+ 	},
+ 	function(){
+     $(".background").css("background-image", "")
+ 	},
+ );
+
+$("button.beach").click(function(){
+  $(".background").css("background-image", "url(beach.jpg)")
+});
+
+  $("button.dojo").hover(
+ 	function(){
+     $(".background").css("background-image", "url(dojo.jpg)")
+ 	},
+ 	function(){
+     $(".background").css("background-image", "")
+ 	}
+ );
+
+   $("button.forest").hover(
+ 	function(){
+     $(".background").css("background-image", "url(forest.jpg)")
+ 	},
+ 	function(){
+     $(".background").css("background-image", "")
+ 	}
+ );    
+
+     $("button.snow").hover(
+ 	function(){
+     $(".background").css("background-image", "url(snow.jpg)")
+ 	},
+ 	function(){
+     $(".background").css("background-image", "")
+ 	}
+ );
+
+ $("button.earth").hover(
+ 	function(){
+     $(".background").css("background-image", "url(earth.jpg)")
+ 	},
+ 	function(){
+     $(".background").css("background-image", "")
+ 	}
+ );
+
+ $("button.matrix").hover(
+ 	function(){
+     $(".background").css("background-image", "url(matrix.jpg)")
+ 	},
+ 	function(){
+     $(".background").css("background-image", "")
+ 	}
+ );
+
+ $("button.beach").click(function () {
+      $(this).attr("background-image", "url(beach.jpg"); 
+});
+
+</script>
+
+</body>
+
+
+</html>

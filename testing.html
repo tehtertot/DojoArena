@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hover In and Out</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <style>
+  div {
+    width: 425px;
+    height: 220px;
+    margin: 10px;
+    background-color: pink;
+    
+
+  }
+
+  img{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    
+    display: inline-block;
+
+  }
+
+  </style>
+  
+ 
+</head>
+
+
+
+
+<body>
+ 
+<div>
+  <img src="beach.jpg">
+  <img src="beach.jpg">
+  <img src="beach.jpg">
+  <img src="beach.jpg">
+  
+ </div>
+
+
+
+<script>
+$(function(){
+
+    
+
+    $('img').hover(
+
+        function(){
+
+            $(this).attr('src', 'snow.jpg');
+
+        },
+
+        function() {
+
+            $(this).attr('src', 'beach.jpg');
+
+    });
+
+});
+</script>
+ 
+</body>
+</html>

@@ -1,0 +1,47 @@
+*{
+	outline: 1px dotted red;
+	margin:0;
+	padding:0;
+	}
+
+.background{
+
+	margin: 10px;
+	height: 800px;
+	background-image: url();
+	background-color: black;
+	background-size: cover;
+}
+
+.select{
+	
+    width: 300px;
+    height: 200px;
+    margin: 120px 300px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 3px solid black;
+    display: block;
+    align-items: center;
+
+}
+
+button{
+	
+	width: 95px;
+    height: 55px;
+    border-radius: 8px;
+    border: 3px solid black;
+    margin: 1px;
+}
+
+h1{
+	color: yellow;
+	text-align: center;
+	padding: 10px;
+    margin: 10px;
+}
+
+
+
+
