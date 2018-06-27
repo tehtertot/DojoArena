@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Dojo Fighter</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+                <div class="menu">
+                    <h1 class="select">Select Arena</h1>
+                    <div class="menuRow">
+                        <button class="menuButton beach">Beach</button>
+                        <button class="menuButton planet">Planet</button>
+                        <button class="menuButton dojo">Dojo</button>
+                    </div>
+                    <div class="menuRow">
+                        <button class="menuButton forest">Forest</button>
+                        <button class="menuButton matrix">Matrix</button>
+                        <button class="menuButton snow">Snow</button>
+                    </div>
+                </div>
+                <div class="menu menu2" style="display: none">
+                        <h1 class="select">Select Players</h1>
+                        <div class="dropdown">
+                            <button class="menuButton selectPlayer">Player 1</button>
+                            <div class="dropdown-content">
+                                <p class="character DonnyL">Donny</p>
+                                <p class="character LeoL">Leo</p>
+                                <p class="character MikeyL">Mikey</p>
+                                <p class="character RaphaelL">Raphael</p>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="menuButton selectPlayer">Player 2</button>
+                            <div class="dropdown-content">
+                                <p class="character DonnyR">Donny</p>
+                                <p class="character LeoR">Leo</p>
+                                <p class="character MikeyR">Mikey</p>
+                                <p class="character RaphaelR">Raphael</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="player player1"></div>
+                <div class="player player2"></div>
+        </div>
+    </div>
+    <script>
+        $(".beach").hover(function () {
+            $(".main").css("backgroundImage","url('beach.jpg')")
+        })
+        $(".planet").hover(function () {
+            $(".main").css("backgroundImage","url('earth.jpg')")
+        })
+        $(".dojo").hover(function () {
+            $(".main").css("backgroundImage","url('dojo.jpg')")
+        })
+        $(".forest").hover(function () {
+            $(".main").css("backgroundImage","url('forest.jpg')")
+        })
+        $(".matrix").hover(function () {
+            $(".main").css("backgroundImage","url('matrix.jpg')")
+        })
+        $(".snow").hover(function () {
+            $(".main").css("backgroundImage","url('snow.jpg')")
+        })
+
+        //kill menu on click
+        $(".beach").click(function () {
+            $(".menu").hide();
+            $(".menu2").show();
+        })
+        $(".planet").click(function () {
+            $(".menu").hide();
+            $(".menu2").show();
+        })
+        $(".dojo").click(function () {
+            $(".menu").hide();
+            $(".menu2").show();
+        })
+        $(".forest").click(function () {
+            $(".menu").hide();
+            $(".menu2").show();
+        })
+        $(".matrix").click(function () {
+            $(".menu").hide();
+            $(".menu2").show();
+        })
+        $(".snow").click(function () {
+            $(".menu").hide();
+            $(".menu2").show();
+        })
+
+
+        //player selection right
+        $(".DonnyR").click(function () {
+            $(".player2").css("backgroundImage","url('donny.png')")
+        })
+        $(".LeoR").click(function () {
+            $(".player2").css("backgroundImage","url('leo.png')")
+        })
+        $(".MikeyR").click(function () {
+            $(".player2").css("backgroundImage","url('mikey.png')")
+        })
+        $(".RaphaelR").click(function () {
+            $(".player2").css("backgroundImage","url('raphael.png')")
+        })
+        //player selection Left
+        $(".DonnyL").click(function () {
+            $(".player1").css("backgroundImage","url('donny.png')")
+        })
+        $(".LeoL").click(function () {
+            $(".player1").css("backgroundImage","url('leo.png')")
+        })
+        $(".MikeyL").click(function () {
+            $(".player1").css("backgroundImage","url('mikey.png')")
+        })
+        $(".RaphaelL").click(function () {
+            $(".player1").css("backgroundImage","url('raphael.png')")
+        })
+       
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* outline: 1px dotted black; */
+}
+
+.container{
+    margin: 0px auto;
+    width: 1000px;
+    padding: 10px;
+}
+
+.main{
+    width: 93%;
+    margin: 20px auto;
+    border: 5px solid gray;
+    min-height: 500px;
+    background: black;
+    vertical-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.menu{
+    width: 26%;
+    background: silver;
+    min-height: 80px;
+    border: 3px solid gray;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 120px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* .imgBkg{
+    background-image: url('beach.jpg');
+    height: 100%;
+} */
+
+.select{
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-shadow: 1px 1px white;
+    color: orange;
+}
+ .menuButton{
+     width: 77px;
+     height: 30px;
+     margin: 3px 0px 0px 0px;
+     border-radius: 5px;
+     background: white;
+     border: 0px;
+ }
+
+ .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 70px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.selectPlayer{
+    width: 110px;
+    font-size: 16px;
+}
+
+.character{
+    background: cornflowerblue;
+    width: 110px;
+    padding: 8px 0px;
+    font-size: 14px;
+}
+
+.player{
+    width: 130px;
+    height: 230px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.player1{
+    margin-left: 170px
+}
+.player2{
+    margin-left: 340px;
+}
+ 
