@@ -57,6 +57,20 @@ h2{
     margin: 10px 0;
 }
 
+#turtlebox1{
+    width: 260px;
+    height: 365px;
+    margin: 50px 400px 0px 30px;
+    display: inline-block;
+}
+
+#turtlebox2{
+    width: 260px;
+    height: 365px;
+    margin: 5spx 0px 0px 14px;
+    display: inline-block;
+}
+
 .userselect{
     width: 400px;
     height: 200px;
