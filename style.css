@@ -3,7 +3,7 @@
     margin: 0px;
     padding: 0px;
     outline: 1px red solid;
-   }
+}
 
 /* GENERAL CONTAINER SETTINGS */
 
@@ -34,9 +34,10 @@ h2{
     text-align: center;
     color: orange;
     text-shadow: 1px 1px white;
+    margin-top: 20px;
 }
 
-.button1, .button2, .button3, .button4, .button5, .button6{
+#button1, #button2, #button3, #button4, #button5, #button6{
     display: inline-block;
     width: 130px;
     height: 30px;
@@ -45,4 +46,17 @@ h2{
     background-color: white;
     border-radius: 10px;
     margin: 10px 0;
+}
+
+.userselect{
+    background: rgba(200, 0, 0, 0.3);
+    border: 3px solid darkgray;
+    border-radius: 10px;
+    width:400px;
+    height:200px;
+    
+}
+
+#player1{
+    margin: 20px 10px 0px 100px;
 }
