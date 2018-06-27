@@ -5,17 +5,11 @@
         <meta name="description" content="Page organization via CSS">
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
     </head>
     <body>
         <!-- CONTAINER CLASS BEGINS -->
         <div class="container">
-
-            <img id="backgroundbeach"src="img/beach.jpg" alt="">
-            <img id="backgroundplanet" src="img/earth.jpg" alt="">
-            <img id="backgrounddojo" src="img/dojo.jpg" alt="">
-            <img id="backgroundforest" src="img/forest.jpg" alt="">
-            <img id="backgroundmatrix" src="img/matrix.jpg" alt="">
-            <img id="backgroundsnow" src="img/snow.jpg" alt="">
 
             <!-- CONTENT CLASS BEGINS (THE ENTIRE SITE)-->
             <div class="content">
@@ -58,7 +52,7 @@
                             <option value="mikey">Mikey </option>
                         </select>
                     </form>
-                </div>
+                </div>                
             </div>
         </div>
         <script>
@@ -186,13 +180,25 @@
                 }
             );
 
-            $("#playerone").val(
-                function (){
-                    $("p").html( "<b>Single:</b> " + singleVals );
-                    $( 'select' ).change(displayVals);
-                    console.log("test"+singleVals);
-                }
-            )
+            // SELECT PLAYER PAGE BELOW
+
+            // $('#player1').on('change', function() {
+                // if ( ['leo', 'raphael', 'donny', 'mikey'].indexOf( this.value ) > -1 )
+                // {
+                    // $("#image").show();
+                // }
+                // else 
+                // {
+                    // $("#image").hide();
+                // }
+            // })
+
+            $("#player1").change(function () {
+                var end = this.value;
+                var firstDropVal = $('#player1').val();
+                console.log(firstDropVal)
+                $(".container").css('img', "url('img/snow.jpg')");
+            });
         
         </script>    
     </body>
