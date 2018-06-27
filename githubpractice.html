@@ -14,31 +14,77 @@ HTML page -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="GitHubPractice.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
     
-        $(document).ready(function() {
-            $('#beach').hover(function(){
-                // console.log("hover");
-                $('#container').css('background-image','url(beach.jpg)');
-            });
-            $('#planet').hover(function(){
-                // console.log("hover");
-                $('#container').css('background-image','url(earth.jpg)');
-            });
-            
+    $(document).ready(function() {
+        $('#square2').hide();
+        function hoverId(imageName, idName){
+            $(idName).css('background-image', 'url(' + imageName + ')');
+        } 
+        $('#beach').hover(function(){ hoverId("beach.jpg", "#container"); });
+        $('#planet').hover(function(){ hoverId("earth.jpg", "#container"); });
+        $('#dojo').hover(function(){ hoverId("dojo.jpg", "#container"); });
+        $('#forest').hover(function(){ hoverId("forest.jpg", "#container"); });
+        $('#matrix').hover(function(){ hoverId("matrix.jpg", "#container");});
+        $('#snow').hover(function(){ hoverId("snow.jpg", "#container"); });
+        $('#beach, #dojo, #planet, #forest, #matrix, #snow').click(function(){
+            $('#square1').hide();
+            $('#square2').show();
         });
+        $('#r1').click(function(){ hoverId("raphael.png", "#player1"); });
+        $('#l1').click(function(){ hoverId("leo.png", "#player1"); });
+        $('#d1').click(function(){ hoverId("donny.png", "#player1"); });
+        $('#m1').click(function(){ hoverId("mikey.png", "#player1"); });
+        $('#r2').click(function(){ hoverId("raphael.png", "#player2"); });
+        $('#l2').click(function(){ hoverId("leo.png", "#player2"); });
+        $('#d2').click(function(){ hoverId("donny.png", "#player2"); });
+        $('#m2').click(function(){ hoverId("mikey.png", "#player2"); });
+    });
     </script>
 </head>
 <body>
     <div id="container">
-        <div class="square">
+        <div class="square" id="square1">
             <h1 class="title">Select Arena</h1>
             <div class="box" id="beach">beach</div>
             <div class="box" id="planet">planet</div>
-            <div class="box">dojo</div>
-            <div class="box">forest</div>
-            <div class="box">matrix</div>
-            <div class="box">snow</div>
+            <div class="box" id="dojo">dojo</div>
+            <div class="box" id="forest">forest</div>
+            <div class="box" id="matrix">matrix</div>
+            <div class="box" id="snow">snow</div>
+        </div>
+        <div class="square" id="square2">
+            <h1 class="title">Select Players</h1>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Select Ninja
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item donatello" id="d1" href="#" style="display: block">Donatello</a>
+                  <a class="dropdown-item leonardo" id="l1" href="#" style="display: block">Leonardo</a>
+                  <a class="dropdown-item michelangelo" id="m1" href="#" style="display: block">Michelangelo</a>
+                  <a class="dropdown-item raphael" id="r1" href="#" style="display: block">Raphael</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Select Ninja
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                    <a class="dropdown-item donatello" id="d2" href="#" style="display: block">Donatello</a>
+                    <a class="dropdown-item leonardo" id="l2" href="#" style="display: block">Leonardo</a>
+                    <a class="dropdown-item michelangelo" id="m2" href="#" style="display: block">Michelangelo</a>
+                    <a class="dropdown-item raphael" id="r2" href="#" style="display: block">Raphael</a>
+                </div>
+            </div>
+        </div>
+        <div class="playerpic" id="player1">
+
+        </div>
+        <div class="playerpic" id="player2">
+            
         </div>
     </div>
 </body>

@@ -10,12 +10,13 @@ CSS page */
     width: 1350px;
     height: 650px;
     border: 15px solid grey;
+    background-size: 1350px 651px;
 }
 
 .square{
-    width: 288px;
-    height: 165px;
-    background: #A3A4A6;
+    width: 340px;
+    height: 170px;
+    background: rgba(163, 164, 166, 0.8);
     border-radius: 10px;
     border: 5px solid grey;
     display: inline-block;
@@ -24,23 +25,71 @@ CSS page */
     position: relative;
     top: 6%;
     left: 30%;
-    padding: 15px;
+    padding: 27px;
+}
+
+#square2{
+    padding: 27px 0px 27px 27px;
 }
 
 .title{
-    margin-left: 20%;
+    margin: 0px 30px 10px;
     text-shadow: 2px 2px white;
-    color:#EBA40B;
+    color: #EBA40B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 34px;
 }
 
 .box{
-    background: lightGrey;
+    background: #FFFFFF;
     width: 85px;
-    height: 30px;
+    height: 29px;
     display: inline-block;
     border-radius: 6px;
-    position: center;
     text-align: center;
-    margin: 3px;
-    padding-top: 5px;
+    margin: 2px;
+    padding-top: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown{
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+.btn{
+    background-color: white;
+}
+
+.playerpic{
+    height: 244px;
+    width: 157px;
+    background-size: 157px 244px;
+    display: inline-block;
+    position: relative;
+    top: 360px;
+}
+
+#player1{
+    right: 260px;
+}
+
+#player2{
+    left: 200px;
+}
+
+.donatello{
+    
+}
+
+.leonardo{
+
+}
+
+.michelangelo{
+
+}
+
+.raphael{
+
 }
