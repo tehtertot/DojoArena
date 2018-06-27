@@ -1,17 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 1px dotted red;
+
+}
+
 .container{
     background-color: black;
-
-    /* min-height: 800px; */
     padding: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 15px solid grey;
 }
 
 .menu{
     background-color: grey;
     width: 400px;
+    min-height: 200px;
     margin: auto;
     text-align: center;
 }
 
-.menu .h1{
+button{
+    padding: 20px;
+    font-size: x-large;
+    width: 115px;
+}
+
+h1{
     color: orange;
 }
+
+.red{
+    background-color: red;
+}
+
+.beach{
+    background-image: url(beach.jpg);
+}
+
+form{
+    
+    background-color: grey;
+    width: 400px;
+    min-height: 200px;
+    margin: auto;
+    text-align: center;
+    display: none;
+}
+
