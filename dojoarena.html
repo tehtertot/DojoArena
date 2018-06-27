@@ -68,7 +68,8 @@
                 $('.container').css("display", "none");
                 $('.container1').css("visibility", "visible");
                 $('.container1').css("background-image", "url(beach.jpg)");                
-                $('#selectplayers').css("visibility", "visible");        });
+                $('#selectplayers').css("visibility", "visible");
+            });
         });
         $(document).ready(function(){
             $('a.planet').click(function(){
@@ -76,7 +77,8 @@
                 $('.container').css("display", "none");
                 $('.container1').css("visibility", "visible");
                 $('.container1').css("background-image", "url(earth.jpg)");                
-                $('#selectplayers').css("visibility", "visible");        });
+                $('#selectplayers').css("visibility", "visible");
+            });
         });
         $(document).ready(function(){
             $('a.dojo').click(function(){
@@ -84,15 +86,17 @@
                 $('.container').css("display", "none");
                 $('.container1').css("visibility", "visible");
                 $('.container1').css("background-image", "url(dojo.jpg)");                
-                $('#selectplayers').css("visibility", "visible");        });
+                $('#selectplayers').css("visibility", "visible");
+            });
         });
         $(document).ready(function(){
             $('a.forest').click(function(){
                 $('#selectarena').css("display", "none");
                 $('.container').css("display", "none");
                 $('.container1').css("visibility", "visible");
-                $('.container1').css("background-image", "url(forest.jpg)");                
-                $('#selectplayers').css("visibility", "visible");        });
+                $('.container1').css("background-image", "url(forest.jpg)");          
+                $('#selectplayers').css("visibility", "visible");
+            });
         });
         $(document).ready(function(){
             $('a.matrix').click(function(){
@@ -100,16 +104,91 @@
                 $('.container').css("display", "none");
                 $('.container1').css("visibility", "visible");
                 $('.container1').css("background-image", "url(matrix.jpg)");                
-                $('#selectplayers').css("visibility", "visible");        });
+                $('#selectplayers').css("visibility", "visible");
+            });
         });
         $(document).ready(function(){
             $('a.snow').click(function(){
                 $('#selectarena').css("display", "none");
                 $('.container').css("display", "none");
                 $('.container1').css("visibility", "visible");
-                $('.container1').css("background-image", "url(snow.jpg)");                
-                $('#selectplayers').css("visibility", "visible");        });
+                $('.container1').css("background-image", "url(snow.jpg)"); $('#selectplayers').css("visibility", "visible");
+            });
         });
+        $(document).ready(function(){
+            $('#player1').change(function(){
+                console.log($('#player1').val())
+                if ($('#player1').val()=='donny'){
+                    $('img.player1').attr({
+                    src: "donny.png",
+                    alt: "Donny",
+                    height: "250px",
+                    width: "180px"
+                })
+                }   
+                else if ($('#player1').val()=='leonardo'){
+                    $('img.player1').attr({
+                    src: "leo.png",
+                    alt: "Leonardo",
+                    height: "250px",
+                    width: "180px"
+                })
+                }
+                else if ($('#player1').val()=='raphael'){
+                    $('img.player1').attr({
+                    src: "raphael.png",
+                    alt: "Raphael",
+                    height: "250px",
+                    width: "180px"
+                })
+                }
+                else if ($('#player1').val()=='mikey'){
+                    $('img.player1').attr({
+                    src: "mikey.png",
+                    alt: "Mikey",
+                    height: "250px",
+                    width: "180px"
+                })};
+            });
+        });
+        $(document).ready(function(){
+            $('#player2').change(function(){
+                console.log($('#player2').val())
+                if ($('#player2').val()=='donny'){
+                    $('img.player2').attr({
+                    src: "donny.png",
+                    alt: "Donny",
+                    height: "250px",
+                    width: "180px"
+                })
+                }   
+                else if ($('#player2').val()=='leonardo'){
+                    $('img.player2').attr({
+                    src: "leo.png",
+                    alt: "Leonardo",
+                    height: "250px",
+                    width: "180px"
+                })
+                }
+                else if ($('#player2').val()=='raphael'){
+                    $('img.player2').attr({
+                    src: "raphael.png",
+                    alt: "Raphael",
+                    height: "250px",
+                    width: "180px"
+                })
+                }
+                else if ($('#player2').val()=='mikey'){
+                    $('img.player2').attr({
+                    src: "mikey.png",
+                    alt: "Mikey",
+                    height: "250px",
+                    width: "180px"
+                })
+                }
+                ;
+            });
+        })
     </script>
 </head>
 <body>
@@ -129,7 +208,23 @@
     <div class="container1">
         <div id="selectplayers">
             <h1>Select Players</h1>
+            <select id='player1'>
+                <option value="empty">Select Player</option>
+                <option value="donny" class="donny">Donny</option>
+                <option value="leonardo" class="leonardo">Leonardo</option>
+                <option value="raphael" class="raphael">Raphael</option>
+                <option value="mikey" class="mikey">Mikey</option>
+            </select>
+            <select id='player2'>
+                <option value="empty">Select Player</option>
+                <option value="donny" class="donny">Donny</option>
+                <option value="leonardo" class="leonardo">Leonardo</option>
+                <option value="raphael" class="raphael">Raphael</option>
+                <option value="mikey" class="mikey">Mikey</option>
+            </select>
         </div>
+        <img src="" class="player1">
+        <img src="" class="player2">
     </div>
 
 </body>
