@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arena</title>
+
+    <link rel="stylesheet" href="ninja.css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    
+    
+</head>
+<body>
+    <div class = "arena">
+        
+          <div class="select">
+            <h1>Select Players</h1> 
+            <select name="Player1" id="Player1">
+                <option value="SelectNinja">Select Ninja</option>
+                <option value="Donny">Donny</option>
+                <option value="Leo">Leo</option>
+                <option value="Mikey">Mikey</option>
+                <option value="Raphael">Raphael</option>
+            </select>
+
+            <select name="Player2" id="Player2">
+                    <option value="SelectNinja">Select Ninja</option>
+                    <option class = "donny" value="Donny">Donny</option>
+                    <option value="Leo">Leo</option>
+                    <option value="Mikey">Mikey</option>
+                    <option value="Raphael">Raphael</option>
+                </select> 
+
+                <button>Button</button>
+            </div>
+        
+    
+    </div>
+
+</body>
+</html>
+
+
+<script>
+$( document ).ready(function() {
+
+
+// is working
+
+/*
+$( "button" ).click(function() {
+    alert ("Use the up, down, left, and right arrows to play the game!" );
+} );
+
+$( "button" ).css( "width", "900px");
+
+
+*/
+
+/*
+$( ":input" ).click(function() {
+    alert ("Use the up, down, left, and right arrows to play the game!" );
+} );
+*/
+
+$( "button" ).css( "width", "900px");
+
+
+
+
+});
+
+</script>
