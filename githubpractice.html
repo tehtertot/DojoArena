@@ -1,0 +1,45 @@
+<!-- Clayton Novotney Matt Selden
+Coding Dojo
+June 27th 2018
+HTML/CSS/ JQuery
+GitHub Practice
+HTML page -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GitHubPractive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="GitHubPractice.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    
+        $(document).ready(function() {
+            $('#beach').hover(function(){
+                // console.log("hover");
+                $('#container').css('background-image','url(beach.jpg)');
+            });
+            $('#planet').hover(function(){
+                // console.log("hover");
+                $('#container').css('background-image','url(earth.jpg)');
+            });
+            
+        });
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div class="square">
+            <h1 class="title">Select Arena</h1>
+            <div class="box" id="beach">beach</div>
+            <div class="box" id="planet">planet</div>
+            <div class="box">dojo</div>
+            <div class="box">forest</div>
+            <div class="box">matrix</div>
+            <div class="box">snow</div>
+        </div>
+    </div>
+</body>
+</html>
