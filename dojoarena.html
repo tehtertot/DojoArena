@@ -5,9 +5,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Dojo Arena</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="#" />
+    <link rel="stylesheet" type="text/css" media="screen" href="dojoarena.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('a.beach').hover(
+            function(){
+            $('.container').css("background-image", "url(beach.jpg)");
+            },
+            function(){
+            $('.container').css("background-image", "none")
+            });
+        });
+        $(document).ready(function(){
+            $('a.planet').hover(
+                function(){
+                $('.container').css("background-image", "url(earth.jpg)");
+                },
+                function(){
+                $('.container').css("background-image", "none")
+                });
+        });
+        $(document).ready(function(){
+            $('a.dojo').hover(
+                function(){
+                $('.container').css("background-image", "url(dojo.jpg)");
+                },
+                function(){
+                $('.container').css("background-image", "none")
+                });
+        });
+        $(document).ready(function(){
+            $('a.forest').hover(
+                function(){
+                $('.container').css("background-image", "url(forest.jpg)");
+                },
+                function(){
+                $('.container').css("background-image", "none")
+                });
+        });
+        $(document).ready(function(){
+            $('a.matrix').hover(
+                function(){
+                $('.container').css("background-image", "url(matrix.jpg)");
+                },
+                function(){
+                $('.container').css("background-image", "none")
+                });
+        });
+        $(document).ready(function(){
+            $('a.snow').hover(
+                function(){
+                $('.container').css("background-image", "url(snow.jpg)");
+                },
+                function(){
+                $('.container').css("background-image", "none")
+                });
+        });
+        $(document).ready(function(){
+            $('a.beach').click(function(){
+                $('#selectarena').css("display", "none");
+                $('.container').css("display", "none");
+                $('.container1').css("visibility", "visible");
+                $('.container1').css("background-image", "url(beach.jpg)");                
+                $('#selectplayers').css("visibility", "visible");        });
+        });
+        $(document).ready(function(){
+            $('a.planet').click(function(){
+                $('#selectarena').css("display", "none");
+                $('.container').css("display", "none");
+                $('.container1').css("visibility", "visible");
+                $('.container1').css("background-image", "url(earth.jpg)");                
+                $('#selectplayers').css("visibility", "visible");        });
+        });
+        $(document).ready(function(){
+            $('a.dojo').click(function(){
+                $('#selectarena').css("display", "none");
+                $('.container').css("display", "none");
+                $('.container1').css("visibility", "visible");
+                $('.container1').css("background-image", "url(dojo.jpg)");                
+                $('#selectplayers').css("visibility", "visible");        });
+        });
+        $(document).ready(function(){
+            $('a.forest').click(function(){
+                $('#selectarena').css("display", "none");
+                $('.container').css("display", "none");
+                $('.container1').css("visibility", "visible");
+                $('.container1').css("background-image", "url(forest.jpg)");                
+                $('#selectplayers').css("visibility", "visible");        });
+        });
+        $(document).ready(function(){
+            $('a.matrix').click(function(){
+                $('#selectarena').css("display", "none");
+                $('.container').css("display", "none");
+                $('.container1').css("visibility", "visible");
+                $('.container1').css("background-image", "url(matrix.jpg)");                
+                $('#selectplayers').css("visibility", "visible");        });
+        });
+        $(document).ready(function(){
+            $('a.snow').click(function(){
+                $('#selectarena').css("display", "none");
+                $('.container').css("display", "none");
+                $('.container1').css("visibility", "visible");
+                $('.container1').css("background-image", "url(snow.jpg)");                
+                $('#selectplayers').css("visibility", "visible");        });
+        });
+    </script>
 </head>
 <body>
-    
+    <div class="container">
+        <div id="selectarena">
+            <h1>Select Arena</h1>
+            <div class="btns">
+                <a href="#" class="btn beach">beach</a>
+                <a href="#" class="btn planet">planet</a>
+                <a href="#" class="btn dojo">dojo</a>
+                <a href="#" class="btn forest">forest</a>
+                <a href="#" class="btn matrix">matrix</a>
+                <a href="#" class="btn snow">snow</a>
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <div id="selectplayers">
+            <h1>Select Players</h1>
+        </div>
+    </div>
+
 </body>
 </html>
