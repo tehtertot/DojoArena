@@ -8,8 +8,6 @@
 .container{
     width: 970px;
     height: 500px;
-    /* padding:100px 0px 0px 350px; */
-    /* background-color: black; */
     border: 3px solid grey;
     background-color: black;
 }
@@ -17,7 +15,6 @@
 .content{
     width: 970px;
     height: 500px;
-    /* background-color: black; */
     display: inline-block;
 }
 
@@ -37,6 +34,8 @@
     border-radius: 10px;
     margin: 100px 0px 0px 300px;
     position: absolute;
+    left: 0px;
+    right: 0px;
     z-index: 10;
 }
 
@@ -59,14 +58,17 @@ h2{
 }
 
 .userselect{
+    width: 400px;
+    height: 200px;
     background: rgba(200, 0, 0, 0.3);
     border: 3px solid darkgray;
     border-radius: 10px;
     margin: 100px 0px 0px 300px;
-    width:400px;
-    height:200px;
-    display: none;
+    position: absolute;
+    left: 0px;
+    right: 0px;
     z-index: 10;
+    display: none;
     
 }
 

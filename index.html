@@ -63,8 +63,6 @@
         </div>
         <script>
             // Stuff to do
-            // 1 Change bg on hover
-            // 2 hide select map show select player box
             // 3 display player image when selected
             $("#button1").hover( 
                 function (){
@@ -80,8 +78,10 @@
                 function(){
                     $(".home").hide();
                     $(".userselect").show();
-                    
-                });
+                    $(".container").css('background-image', "url('img/beach.jpg')");
+                    $(this).off('mouseenter mouseleave');
+                }
+            );
             
             
             $("#button2").hover( 
@@ -98,9 +98,12 @@
 
             $("#button2").click(
                 function(){
-                   $(".home").hide();
-                   $(".userselect").show();
-                });
+                    $(".home").hide();
+                    $(".userselect").show();
+                    $(".container").css('background-image', "url('img/earth.jpg')");
+                    $(this).off('mouseenter mouseleave');
+                }
+            );
 
             $("#button3").hover( 
                 function (){
@@ -112,6 +115,16 @@
                     $(".container").css('background-image', '')
                 }
             );
+
+            $("#button3").click(
+                function(){
+                    $(".home").hide();
+                    $(".userselect").show();
+                    $(".container").css('background-image', "url('img/dojo.jpg')");
+                    $(this).off('mouseenter mouseleave');
+                }
+            );
+
             $("#button4").hover( 
                 function (){
                     $(".container").css('background-image', "url('img/forest.jpg')");
@@ -123,6 +136,16 @@
                     $(".container").css('background-image', '')
                 }
             );
+
+            $("#button4").click(
+                function(){
+                    $(".home").hide();
+                    $(".userselect").show();
+                    $(".container").css('background-image', "url('img/forest.jpg')");
+                    $(this).off('mouseenter mouseleave');
+                }
+            );
+
             $("#button5").hover( 
                 function (){
                     $(".container").css('background-image', "url('img/matrix.jpg')");
@@ -133,6 +156,16 @@
                     $(".container").css('background-image', '')
                 }
             );
+
+            $("#button5").click(
+                function(){
+                    $(".home").hide();
+                    $(".userselect").show();
+                    $(".container").css('background-image', "url('img/matrix.jpg')");
+                    $(this).off('mouseenter mouseleave');
+                }
+            );
+
             $("#button6").hover( 
                 function (){
                     $(".container").css('background-image', "url('img/snow.jpg')");
@@ -141,6 +174,23 @@
                 },
                 function (){
                     $(".container").css('background-image', '')
+                }
+            )
+
+            $("#button6").click(
+                function(){
+                    $(".home").hide();
+                    $(".userselect").show();
+                    $(".container").css('background-image', "url('img/snow.jpg')");
+                    $(this).off('mouseenter mouseleave');
+                }
+            );
+
+            $("#playerone").val(
+                function (){
+                    $("p").html( "<b>Single:</b> " + singleVals );
+                    $( 'select' ).change(displayVals);
+                    console.log("test"+singleVals);
                 }
             )
         
