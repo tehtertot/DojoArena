@@ -1,0 +1,17 @@
+.container{
+    background-color: black;
+
+    /* min-height: 800px; */
+    padding: 300px;
+}
+
+.menu{
+    background-color: grey;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.menu .h1{
+    color: orange;
+}
