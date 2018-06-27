@@ -21,22 +21,22 @@
             <div class="content">
                 <div class="home">
                     <h2>Select Arena</h2>
-                    <div id=button1>
+                    <div id="button1">
                         <p>beach</p>
                     </div>
-                    <div id=button2>
+                    <div id="button2">
                         <p>planet</p>
                     </div>
-                    <div id=button3>
+                    <div id="button3">
                         <p>dojo</p>
                     </div>
-                    <div id=button4>
+                    <div id="button4">
                         <p>forest</p>
                     </div>
-                    <div id=button5>
+                    <div id="button5">
                         <p>matrix</p>
                     </div>
-                    <div id=button6>
+                    <div id="button6">
                         <p>snow</p>
                     </div>
                 </div>
@@ -66,7 +66,84 @@
             // 1 Change bg on hover
             // 2 hide select map show select player box
             // 3 display player image when selected
-            // 4 player box opacity DONE
+            $("#button1").hover( 
+                function (){
+                    $(".container").css('background-image', "url('img/beach.jpg')");
+                    $(".container").css("background-size","100%");
+                    $(".container").css("background-repeat","no-repeat");
+                },
+                function (){
+                    $(".container").css('background-image', '')
+                },
+            );
+            $("#button1").click(
+                function(){
+                    $(".home").hide();
+                    $(".userselect").show();
+                    
+                });
+            
+            
+            $("#button2").hover( 
+                function (){
+                    $(".container").css('background-image', "url('img/earth.jpg')");
+                    $(".container").css("background-size","100%");
+                    $(".container").css("background-repeat","no-repeat");
+                    
+                },
+                function (){
+                    $(".container").css('background-image', '')
+                }
+            );
+
+            $("#button2").click(
+                function(){
+                   $(".home").hide();
+                   $(".userselect").show();
+                });
+
+            $("#button3").hover( 
+                function (){
+                    $(".container").css('background-image', "url('img/dojo.jpg')");
+                    $(".container").css("background-size","100%");
+                    $(".container").css("background-repeat","no-repeat");
+                },
+                function (){
+                    $(".container").css('background-image', '')
+                }
+            );
+            $("#button4").hover( 
+                function (){
+                    $(".container").css('background-image', "url('img/forest.jpg')");
+                    $(".container").css("background-size","100%");
+                    $(".container").css("background-repeat","no-repeat");
+                    
+                },
+                function (){
+                    $(".container").css('background-image', '')
+                }
+            );
+            $("#button5").hover( 
+                function (){
+                    $(".container").css('background-image', "url('img/matrix.jpg')");
+                    $(".container").css("background-size","100%");
+                    $(".container").css("background-repeat","no-repeat");
+                },
+                function (){
+                    $(".container").css('background-image', '')
+                }
+            );
+            $("#button6").hover( 
+                function (){
+                    $(".container").css('background-image', "url('img/snow.jpg')");
+                    $(".container").css("background-size","100%");
+                    $(".container").css("background-repeat","no-repeat");
+                },
+                function (){
+                    $(".container").css('background-image', '')
+                }
+            )
+        
         </script>    
     </body>
 </html>

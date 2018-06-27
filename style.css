@@ -5,15 +5,13 @@
     outline: 1px red solid;
 }
 
-/* GENERAL CONTAINER SETTINGS */
-
 .container{
     width: 970px;
     height: 500px;
     /* padding:100px 0px 0px 350px; */
     /* background-color: black; */
     border: 3px solid grey;
-
+    background-color: black;
 }
 
 .content{
@@ -24,11 +22,10 @@
 }
 
 #backgroundbeach, #backgroundplanet, #backgrounddojo, #backgroundforest, #backgroundmatrix, #backgroundsnow{
-    /* display:none; */
-    /* background-size: 970px 500px; */
     width: 970px;
     height: 500px;
-    display: none;
+    position: absolute;
+    display:none;
 
 }
 
@@ -38,7 +35,9 @@
     background-color: grey;
     border: 3px solid darkgray;
     border-radius: 10px;
-
+    margin: 100px 0px 0px 300px;
+    position: absolute;
+    z-index: 10;
 }
 
 h2{
@@ -63,9 +62,11 @@ h2{
     background: rgba(200, 0, 0, 0.3);
     border: 3px solid darkgray;
     border-radius: 10px;
+    margin: 100px 0px 0px 300px;
     width:400px;
     height:200px;
     display: none;
+    z-index: 10;
     
 }
 
