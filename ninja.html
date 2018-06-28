@@ -11,7 +11,20 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+  
+  <script>
+    $( document ).ready(function() {
     
+  $('#donny).click(
+      function () {
+          $('#displayDonny').css("background-image", "url('donny.jpg')" );
+          
+      }
+  );
+    
+    });
+    
+    </script>    
     
 </head>
 <body>
@@ -21,7 +34,7 @@
             <h1>Select Players</h1> 
             <select name="Player1" id="Player1">
                 <option value="SelectNinja">Select Ninja</option>
-                <option value="Donny">Donny</option>
+                <option id = "donny" value="Donny">Donny</option>
                 <option value="Leo">Leo</option>
                 <option value="Mikey">Mikey</option>
                 <option value="Raphael">Raphael</option>
@@ -29,7 +42,7 @@
 
             <select name="Player2" id="Player2">
                     <option value="SelectNinja">Select Ninja</option>
-                    <option class = "donny" value="Donny">Donny</option>
+                    <option id = "donny" value="Donny">Donny</option>
                     <option value="Leo">Leo</option>
                     <option value="Mikey">Mikey</option>
                     <option value="Raphael">Raphael</option>
@@ -45,33 +58,3 @@
 </html>
 
 
-<script>
-$( document ).ready(function() {
-
-
-// is working
-
-/*
-$( "button" ).click(function() {
-    alert ("Use the up, down, left, and right arrows to play the game!" );
-} );
-
-$( "button" ).css( "width", "900px");
-
-
-*/
-
-/*
-$( ":input" ).click(function() {
-    alert ("Use the up, down, left, and right arrows to play the game!" );
-} );
-*/
-
-$( "button" ).css( "width", "900px");
-
-
-
-
-});
-
-</script>

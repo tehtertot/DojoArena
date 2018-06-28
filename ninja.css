@@ -22,10 +22,110 @@
     background-repeat: no-repeat;
     width: 100%;
     height: 1000px;
+}
 
+#donny {
     
 }
 
-.donny {
-    
+#displayDonny {
+
+}
+
+/*Chris or project file*/
+
+#container {
+    background-color: black;
+    height: auto;
+    margin: 20px auto;
+    padding: 30px;	
+}
+
+.imageChange {
+	min-height: 600px;
+	padding: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.buttonGroup {
+	margin-left: 2%;
+	margin-top: 5%;
+}
+
+.selectBox {
+    margin: 5% auto;
+    min-height: 200px;
+    background-color: grey;
+    width: 20%;
+    border-radius: 12px;
+    padding: 10px;
+    border: 2px inset silver;	
+}
+
+.select {
+    text-align: center;
+    color: orange;
+    text-shadow: 2px 2px 2px white;	
+}
+
+.selectBox p {
+    border-radius: 4px;
+    background-color: white;
+    margin-left: 6%;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+
+/* Select Player */
+
+.selectBoxPL {
+	display: none;
+	margin: 5% auto;
+	min-height: 200px;
+	background-color: grey;
+	width: 20%;
+	border-radius: 12px;
+	padding: 10px;
+	border: 2px inset silver;	
+}
+
+.dropdown {
+	display: inline-block;
+	width: 40%;
+    margin-top: 25px;
+    padding: 10px 20px;
+    height: -1px;
+}
+
+.btn {
+    border: 1px inset white;
+    background-color: white;
+    color: black;
+}
+
+.btn:hover {
+	color: black;
+	background-color: white;
+	border: 1px inset white;
+}
+
+.ninjaP1Pos {
+    transform: translateY(-251px);
+    margin-left: 40%;
+}
+
+.ninja2Pos {
+	transform: translateY(-251px);
+	margin-left: 80%;
+
+}
+
+.playerPicks {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    height: 150px;
 }
