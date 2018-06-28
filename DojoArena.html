@@ -25,25 +25,27 @@
 
 <script type="text/javascript">
 
+// Hover button showing background-image
+
+
+var background = "";
+
  $("button.beach").hover(
  	function(){
      $(".background").css("background-image", "url(beach.jpg)")
  	},
  	function(){
-     $(".background").css("background-image", "")
+     $(".background").css("background-image", background)
  	},
  );
 
-$("button.beach").click(function(){
-  $(".background").css("background-image", "url(beach.jpg)")
-});
 
   $("button.dojo").hover(
  	function(){
      $(".background").css("background-image", "url(dojo.jpg)")
  	},
  	function(){
-     $(".background").css("background-image", "")
+     $(".background").css("background-image", background)
  	}
  );
 
@@ -52,7 +54,7 @@ $("button.beach").click(function(){
      $(".background").css("background-image", "url(forest.jpg)")
  	},
  	function(){
-     $(".background").css("background-image", "")
+     $(".background").css("background-image", background)
  	}
  );    
 
@@ -61,7 +63,7 @@ $("button.beach").click(function(){
      $(".background").css("background-image", "url(snow.jpg)")
  	},
  	function(){
-     $(".background").css("background-image", "")
+     $(".background").css("background-image", background)
  	}
  );
 
@@ -70,7 +72,7 @@ $("button.beach").click(function(){
      $(".background").css("background-image", "url(earth.jpg)")
  	},
  	function(){
-     $(".background").css("background-image", "")
+     $(".background").css("background-image", background)
  	}
  );
 
@@ -79,12 +81,30 @@ $("button.beach").click(function(){
      $(".background").css("background-image", "url(matrix.jpg)")
  	},
  	function(){
-     $(".background").css("background-image", "")
+     $(".background").css("background-image", background)
  	}
  );
 
+
+// click button Select background-image
+
  $("button.beach").click(function () {
-      $(this).attr("background-image", "url(beach.jpg"); 
+      background = "url(beach.jpg)"
+});
+ $("button.earth").click(function () {
+ 	background = "url(earth.jpg)" 
+});
+ $("button.snow").click(function () {
+ 	background = "url(snow.jpg)"
+});
+ $("button.dojo").click(function () {
+ 	background = "url(dojo.jpg)"
+});
+ $("button.matrix").click(function () {
+ 	background = "url(matrix.jpg)"
+});
+ $("button.forest").click(function () {
+ 	background = "url(forest.jpg)"
 });
 
 </script>
